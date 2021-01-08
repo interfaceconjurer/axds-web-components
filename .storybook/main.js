@@ -2,13 +2,16 @@ const path = require("path");
 
 module.exports = {
   stories: [
+    "../src/components/**/*.stories.mdx",
     "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
     "../node_modules/@salesforce-ux/**/*.stories.js",
   ],
 
   webpackFinal: (config) => {
     // remove their css loader...
-    const rules = config.module.rules.filter((rule) => !rule.test.toString().match(".css"));
+    const rules = config.module.rules.filter(
+      (rule) => !rule.test.toString().match(".css")
+    );
 
     // ...and replace with our own.
     rules.push({
