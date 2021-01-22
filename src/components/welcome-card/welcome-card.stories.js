@@ -1,5 +1,5 @@
 export default {
-  title: "C360 Subsystem/Welcome Card",
+  title: 'My Subsystem/Welcome Card',
 };
 
 export const Base = () => `

@@ -18,4 +18,8 @@ node_modules
 *.log
 
 # Ignore generated folders
+<<<<<<< HEAD
 public
+=======
+public
+>>>>>>> build: Add more boilerplate code
