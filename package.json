@@ -1,18 +1,39 @@
 {
   "name": "sds-subsystem-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "This template repository contains all of the boilerplate infrastructural setup you'll need to start building subsystems on top of 'SDS Core', the common foundation of the Salesforce Design System.",
   "scripts": {
-    "storybook": "start-storybook"
+    "dev": "npm run build && start-storybook",
+    "build": "npm run build:assets",
+    "build:assets": "node ./lib/scripts/assets.js",
+    "test": "npm run test:lint",
+    "test:eslint": "eslint --ignore-path .gitignore .",
+    "test:stylelint": "stylelint --ignore-path .gitignore \"**/*.css\"",
+    "test:lint": "npm run test:stylelint && npm run test:eslint",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|css)\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@storybook/html": "^6.1.11"
-  },
+  "author": "Salesforce",
+  "license": "SEE LICENSE IN README.md",
   "devDependencies": {
-    "@salesforce-ux/sds-stylelint-config": "0.0.1"
+    "@salesforce-ux/sds-stylelint-config": "0.1.0",
+    "@storybook/html": "^6.1.15",
+    "elix": "^14.1.2",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "markdown-loader": "^6.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.9.0"
   }
 }
