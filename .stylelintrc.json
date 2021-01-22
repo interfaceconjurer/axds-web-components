@@ -1,0 +1,3 @@
+{
+  "extends": ["@salesforce-ux/sds-stylelint-config"]
+}
