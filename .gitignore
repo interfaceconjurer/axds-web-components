@@ -1,0 +1,21 @@
+# Ignore all hidden dotfiles
+.*
+
+# Whitelist useful dotfiles
+!/.editorconfig
+!/.gitignore
+!/.storybook
+!/.eslintrc.js
+!/.prettierrc
+!/.stylelintrc.json
+!/.huskyrc
+!/.lintstagedrc
+
+# Ignore modules
+node_modules
+
+# Ignore logs
+*.log
+
+# Ignore generated folders
+public
