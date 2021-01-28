@@ -7,6 +7,8 @@ module.exports = {
     "../node_modules/@salesforce-ux/**/*.stories.js",
   ],
 
+  addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
+
   webpackFinal: (config) => {
     // remove their css loader...
     const rules = config.module.rules.filter((rule) => !rule.test.toString().match(".css"));
@@ -40,6 +42,8 @@ module.exports = {
 
     // assign the updated rules to the config
     config.module.rules = rules;
+
+    config.devtool = "eval";
 
     // return the config
     return config;

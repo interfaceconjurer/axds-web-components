@@ -18,7 +18,12 @@
   "author": "Salesforce",
   "license": "SEE LICENSE IN README.md",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@salesforce-ux/sds-common": "^0.1.0",
     "@salesforce-ux/sds-stylelint-config": "0.1.0",
+    "@storybook/addon-a11y": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
     "@storybook/html": "^6.1.15",
     "elix": "^14.1.2",
     "eslint": "^7.18.0",
