@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   stories: [
     "../src/components/**/*.stories.mdx",
-    '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
+    "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
     "../node_modules/@salesforce-ux/**/*.stories.js",
   ],
 
