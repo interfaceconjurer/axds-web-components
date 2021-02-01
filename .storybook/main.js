@@ -3,9 +3,11 @@ const path = require("path");
 module.exports = {
   stories: [
     "../src/components/**/*.stories.mdx",
-    '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
+    "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
     "../node_modules/@salesforce-ux/**/*.stories.js",
   ],
+
+  addons: ["@storybook/addon-essentials", "@storybook/addon-a11y"],
 
   webpackFinal: (config) => {
     // remove their css loader...
@@ -40,6 +42,8 @@ module.exports = {
 
     // assign the updated rules to the config
     config.module.rules = rules;
+
+    config.devtool = "eval";
 
     // return the config
     return config;

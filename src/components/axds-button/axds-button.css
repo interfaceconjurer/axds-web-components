@@ -1,0 +1,87 @@
+/**
+    Button
+*/
+
+[part~="axds-button"] {
+  background: #fff;
+  border-radius: 0.5em;
+  color: var(--slds-g-blue-vibrant-50);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+[part~="axds-button"]:hover {
+  background: var(--slds-g-gray-ui-95);
+  box-shadow: 0 0 0 2px rgba(var(--slds-g-blue-vibrant-70), 1);
+}
+
+[part~="axds-button"]:focus,
+[part~="axds-button"]:active {
+  background: #fff;
+}
+
+/**
+    Type modifiers: Primary
+  */
+
+[ax-type~="primary"] {
+  background: var(--slds-g-blue-vibrant-50);
+  color: #fff;
+  border: 1px solid currentColor;
+}
+
+[ax-type~="primary"]:hover {
+  background: var(--slds-g-blue-vibrant-40);
+}
+
+[ax-type~="primary"]:focus,
+[ax-type~="primary"]:active {
+  background: var(--slds-g-blue-vibrant-50);
+}
+
+/**
+    Type modifiers: Secondary
+  */
+
+[ax-type~="secondary"] {
+  background: #fff;
+  color: var(--slds-g-blue-vibrant-40);
+  border: 1px solid currentColor;
+}
+
+[ax-type~="secondary"]:hover {
+  background: var(--slds-g-gray-ui-95);
+}
+
+[ax-type~="secondary"]:focus,
+[ax-type~="secondary"]:active {
+  background: #fff;
+}
+
+/**
+      Type modifiers: Tertiary (Default)
+  */
+
+/**
+      Size modifiers
+  */
+
+[ax-size~="small"] {
+  padding: 0.5rem 1rem;
+}
+
+[ax-size~="large"] {
+  padding: 2rem 4rem;
+}
+
+/**
+      Action modifiers
+  */
+
+[ax-action~="weak"] {
+  color: var(--slds-g-gray-ui-50);
+}
