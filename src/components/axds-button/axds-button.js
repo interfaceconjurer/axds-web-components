@@ -1,5 +1,5 @@
 import template from "./axds-button.html";
-import common from "@salesforce-ux/sds-common/common.css";
+import common from "@salesforce-ux/sds-common/common.module.css";
 import css from "./axds-button.css";
 import addAttrToComponent from "../../../lib/utils/add-attrs-to-child";
 

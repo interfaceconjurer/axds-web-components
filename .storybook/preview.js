@@ -1,5 +1,7 @@
 // import SLDS 3.0 colors and Salesforce UX packages
 import colorVariables from "../lib/slds3-colors/colorVariables";
+
+import "@salesforce-ux/sds-guidelines/lib/components/define";
 import "@salesforce-ux/sds-components/lib/define";
 
 // set up color variables

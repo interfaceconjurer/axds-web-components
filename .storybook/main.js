@@ -13,11 +13,7 @@ module.exports = {
     rules.push({
       test: /\.css$/,
       use: ["raw-loader"],
-      include: [
-        path.resolve(__dirname, "../src/components"),
-        path.resolve(__dirname, "../node_modules/@salesforce-ux/sds-common"),
-        /\.module\.css$/,
-      ],
+      include: [path.resolve(__dirname, "../src/components"), /\.module\.css$/],
     });
 
     rules.push({
@@ -29,11 +25,7 @@ module.exports = {
         // Comment out for npm link
         // path.resolve(__dirname, "../../salesforce-design-system"),
       ],
-      exclude: [
-        path.resolve(__dirname, "../src/components"),
-        path.resolve(__dirname, "../node_modules/@salesforce-ux/sds-common"),
-        /\.module\.css$/,
-      ],
+      exclude: [path.resolve(__dirname, "../src/components"), /\.module\.css$/],
     });
 
     // markdown loader
