@@ -1,6 +1,6 @@
 // import SLDS 3.0 colors and Salesforce UX packages
 import colorVariables from "../lib/slds3-colors/colorVariables";
-import SDSCommon from "@salesforce-ux/sds-common/common";
+import "@salesforce-ux/sds-components/lib/define";
 
 // set up color variables
 colorVariables.map((variable) => {
@@ -12,6 +12,5 @@ colorVariables.map((variable) => {
 import { WelcomeCard } from "../src/components/welcome-card/welcome-card";
 import { AXDSButton } from "../src/components/axds-button/axds-button";
 
-customElements.define("sds-common", SDSCommon);
 customElements.define("welcome-card", WelcomeCard);
 customElements.define("axds-button", AXDSButton);
