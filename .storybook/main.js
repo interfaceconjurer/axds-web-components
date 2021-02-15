@@ -5,6 +5,7 @@ module.exports = {
     "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
     "../node_modules/@salesforce-ux/**/*.stories.js",
   ],
+  addons: ["@storybook/addon-controls"],
 
   webpackFinal: (config) => {
     // remove their css loader...

@@ -4,13 +4,13 @@
 
 [part~="axds-button"] {
   background: #fff;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   color: var(--slds-g-blue-vibrant-50);
   cursor: pointer;
   display: inline-block;
   font-size: 0.875rem;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 0.25rem 0.75rem;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -74,8 +74,12 @@
   padding: 0.5rem 1rem;
 }
 
+[ax-size~="medium"] {
+  padding: 0.5rem 1.125rem;
+}
+
 [ax-size~="large"] {
-  padding: 2rem 4rem;
+  padding: 1rem 1.125rem;
 }
 
 /**
